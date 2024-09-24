@@ -11,7 +11,7 @@ public class UnitTest1
         var car = new Car();
         car.Speed.Should().Be(0);
     }
-    
+
     [Fact]
     public void Car_WhenAccelerated_Speed_ShouldBeGreaterThanZero()
     {
