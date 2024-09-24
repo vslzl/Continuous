@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Solution Items", "_Solution Items", "{AFA091A5-16B6-48ED-ADCA-746D16669C09}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
-		.github\workflows\pr-verify.yml = .github\workflows\pr-verify.yml
+		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9B6D7BC5-9DE7-49BA-B12C-3B473461B919}"
@@ -14,6 +14,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9D5EB9FF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Continuous.Web.Tests", "tests\Continuous.Web.Tests\Continuous.Web.Tests.csproj", "{A2179FF2-90D3-4F0A-B1B4-4E504CA03EE7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{A7AA65FC-C8A8-45FC-8E07-17BD23A83B24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{10A6A79A-A422-4D9C-9670-7932ED118D79}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\pr-verify.yml = .github\workflows\pr-verify.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +29,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{DF0BC3AF-19C5-4A47-8BC7-D7F8B48E513A} = {9B6D7BC5-9DE7-49BA-B12C-3B473461B919}
 		{A2179FF2-90D3-4F0A-B1B4-4E504CA03EE7} = {9D5EB9FF-3144-4571-A62A-99EA13ECFD9B}
+		{10A6A79A-A422-4D9C-9670-7932ED118D79} = {A7AA65FC-C8A8-45FC-8E07-17BD23A83B24}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{DF0BC3AF-19C5-4A47-8BC7-D7F8B48E513A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
