@@ -19,6 +19,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{10A6A79A-A422-4D9C-9670-7932ED118D79}"
 	ProjectSection(SolutionItems) = preProject
 		.github\workflows\pr-verify.yml = .github\workflows\pr-verify.yml
+		.github\workflows\ci.yml = .github\workflows\ci.yml
 	EndProjectSection
 EndProject
 Global
