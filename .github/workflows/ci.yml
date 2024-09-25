@@ -19,6 +19,13 @@ jobs:
 
       - name: Test with dotnet
         run: dotnet test --configuration Release
-      
+
       - name: Publish with dotnet
         run: dotnet publish src/Continuous.Web/Continuous.Web.csproj --configuration Release -o artifacts
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: continuous-artifact
+          path: artifacts/
+        
+        
