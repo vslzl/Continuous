@@ -20,6 +20,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 	ProjectSection(SolutionItems) = preProject
 		.github\workflows\pr-verify.yml = .github\workflows\pr-verify.yml
 		.github\workflows\ci.yml = .github\workflows\ci.yml
+		.github\workflows\step-deploy-azure-web-apps.yml = .github\workflows\step-deploy-azure-web-apps.yml
 	EndProjectSection
 EndProject
 Global

@@ -29,13 +29,13 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: continuous-artifact
+          name: artifact
           path: artifacts/
   
   deploy_dev:
     name: Deploy Dev
     needs: build
-    uses: vslzl/github-actions/.github/workflows/step-azure-web-apps-deploy.yml@main
+    uses: .github/workflows/step-deploy-azure-web-apps.yml
     with:
       env: dev
       app_name: app-vslzl-continuous
@@ -44,7 +44,7 @@ jobs:
   deploy_prod:
     name: Deploy Prod
     needs: deploy_dev
-    uses: vslzl/github-actions/.github/workflows/step-azure-web-apps-deploy.yml@main
+    uses: .github/workflows/step-deploy-azure-web-apps.yml
     with:
       env: dev
       app_name: app-vslzl-continuous
