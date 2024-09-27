@@ -35,7 +35,7 @@ jobs:
   deploy_dev:
     name: Deploy Dev
     needs: build
-    uses: .github/workflows/step-deploy-azure-web-apps.yml
+    uses: ./.github/workflows/step-deploy-azure-web-apps.yml
     with:
       env: dev
       resource_group_name: rg-vslzl-continuous-dev
@@ -45,7 +45,7 @@ jobs:
   deploy_prod:
     name: Deploy Prod
     needs: deploy_dev
-    uses: .github/workflows/step-deploy-azure-web-apps.yml
+    uses: ./.github/workflows/step-deploy-azure-web-apps.yml
     with:
       env: dev
       resource_group_name: rg-vslzl-continuous-prod
