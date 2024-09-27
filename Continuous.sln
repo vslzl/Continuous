@@ -23,6 +23,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 		.github\workflows\step-deploy-azure-web-apps.yml = .github\workflows\step-deploy-azure-web-apps.yml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastructure", "{5490B59F-4531-4CCB-B4C3-85DADBC0806E}"
+	ProjectSection(SolutionItems) = preProject
+		infrastructure\appservice.bicep = infrastructure\appservice.bicep
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
