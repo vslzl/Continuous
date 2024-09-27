@@ -26,6 +26,13 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastructure", "{5490B59F-4531-4CCB-B4C3-85DADBC0806E}"
 	ProjectSection(SolutionItems) = preProject
 		infrastructure\appservice.bicep = infrastructure\appservice.bicep
+		infrastructure\main.bicep = infrastructure\main.bicep
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "environments", "environments", "{6B89242F-8D5A-4C7B-80B0-9C56E81C7F2D}"
+	ProjectSection(SolutionItems) = preProject
+		infrastructure\environments\dev.bicepparam = infrastructure\environments\dev.bicepparam
+		infrastructure\environments\prod.bicepparam = infrastructure\environments\prod.bicepparam
 	EndProjectSection
 EndProject
 Global
@@ -37,6 +44,7 @@ Global
 		{DF0BC3AF-19C5-4A47-8BC7-D7F8B48E513A} = {9B6D7BC5-9DE7-49BA-B12C-3B473461B919}
 		{A2179FF2-90D3-4F0A-B1B4-4E504CA03EE7} = {9D5EB9FF-3144-4571-A62A-99EA13ECFD9B}
 		{10A6A79A-A422-4D9C-9670-7932ED118D79} = {A7AA65FC-C8A8-45FC-8E07-17BD23A83B24}
+		{6B89242F-8D5A-4C7B-80B0-9C56E81C7F2D} = {5490B59F-4531-4CCB-B4C3-85DADBC0806E}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{DF0BC3AF-19C5-4A47-8BC7-D7F8B48E513A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
