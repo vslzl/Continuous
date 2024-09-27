@@ -38,7 +38,8 @@ jobs:
     uses: .github/workflows/step-deploy-azure-web-apps.yml
     with:
       env: dev
-      app_name: app-vslzl-continuous
+      resource_group_name: rg-vslzl-continuous-dev
+      app_service_name: app-vslzl-continuous-dev
     secrets: inherit
   
   deploy_prod:
@@ -47,6 +48,7 @@ jobs:
     uses: .github/workflows/step-deploy-azure-web-apps.yml
     with:
       env: dev
-      app_name: app-vslzl-continuous
+      resource_group_name: rg-vslzl-continuous-prod
+      app_service_name: app-vslzl-continuous-prod
     secrets: inherit
   
