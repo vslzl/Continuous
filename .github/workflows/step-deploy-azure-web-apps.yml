@@ -6,7 +6,10 @@ on:
       env:
         required: true
         type: string
-      app_name:
+      resource_group_name:
+        required: true
+        type: string
+      app_service_name:
         required: true
         type: string
     secrets:
@@ -38,5 +41,10 @@ jobs:
       - name: "Deploy to Azure App Service"
         uses: azure/webapps-deploy@v2
         with:
-          app-name: ${{ inputs.app_name }}-${{ inputs.env }}
+          app-name: ${{ inputs.app_service_name }}
+          slot-name: slot
           package: artifacts/
+
+      - name: Swap slots
+        run: |
+          az webapp deployment slot swap -g ${{ inputs.resource_group_name }} -n ${{ inputs.app_service_name }} --slot slot --target-slot production --verbose
